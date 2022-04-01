@@ -16,11 +16,18 @@
 
 
 # Question 1 
+# Comment: Awesome work! I would just propose two things here
+# We generally want to creae functions that do one thing and return for the nexr one (also the Unix philosophy).
+# If the user gives us a value for your_name, we would not want to then also go ask them.
+# We could then do one of two things with your soltuion, check if there is an input and ask if there is not one.
+# or just print the length regardless.
+# See what you can do with this philosophy on the next few.
 def number_of_letters(your_name):
-    your_name = input("Lets find out how many letters are in your name\n" "Enter your name:")
+    your_name = input("Lets find out how many letters are in your name\n" "Enter your name:") if your_name == None
     print(len(your_name))
 
-number_of_letters(your_name="mike")
+number_of_letters(24)
+number_of_letters()
 
 # Question 2
 def odd_or_even(number):
